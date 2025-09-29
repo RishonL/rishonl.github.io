@@ -1,47 +1,223 @@
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>Rishon's Website</title>
-		<!-- Google tag (gtag.js) -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-86QJP2D7P9"></script>
-		<script>
-  		window.dataLayer = window.dataLayer || [];
-  		function gtag(){dataLayer.push(arguments);}
-  		gtag('js', new Date());
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rishon Lumba | About Me</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      color: #1f2933;
+      background-color: #f4f5f7;
+    }
 
-  		gtag('config', 'G-86QJP2D7P9');
-		</script>
-	</head>
-<style>
-body {
-	font-family: Arial, sans-serif;
-	background: #f4f4f4;
-	margin: 0;
-	padding: 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100vh;
-}
-.container {
-	background: white;
-	padding: 2rem 3rem;
-	border-radius: 8px;
-	text-align: center;
-}
-h1 {
-	margin-bottom: 1rem;
-}
-a:hover {
-	text-decoration: underline;
-}
-</style>
-	</head>
-	<body>
-		<div class="container">
-			<h1>Testing 101</h1>
-			<p>Learning (I hate you Krrish)</p>
-			<a href="/about.html">Why this exists</a>
-		</div>
-	</body>
+    body {
+      margin: 0;
+      background: linear-gradient(180deg, #fdfdfd 0%, #f4f5f7 100%);
+    }
+
+    a {
+      color: inherit;
+    }
+
+    header {
+      background: rgba(255, 255, 255, 0.95);
+      border-bottom: 1px solid #e5e7eb;
+      padding: 1.75rem 1.25rem;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    header .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .site-links {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .site-links a {
+      text-decoration: none;
+      font-weight: 600;
+      color: #2563eb;
+      border: 1px solid rgba(37, 99, 235, 0.25);
+      padding: 0.45rem 0.9rem;
+      border-radius: 999px;
+      background: rgba(37, 99, 235, 0.1);
+      transition: background 0.2s ease, color 0.2s ease;
+    }
+
+    .site-links a:hover,
+    .site-links a:focus-visible {
+      background: rgba(37, 99, 235, 0.18);
+      color: #1d4ed8;
+    }
+
+    nav a {
+      text-decoration: none;
+      font-weight: 500;
+      margin-left: 1.5rem;
+      color: #52606d;
+    }
+
+    nav a:first-child {
+      margin-left: 0;
+    }
+
+    nav a:hover,
+    nav a:focus-visible {
+      color: #1f2933;
+    }
+
+    main {
+      padding: 2.5rem 1.25rem 4rem;
+    }
+
+    section {
+      background: #ffffff;
+      border-radius: 18px;
+      padding: 2.5rem;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.06);
+      margin-bottom: 2rem;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      margin: 0 0 1rem;
+    }
+
+    h2 {
+      font-size: 1.7rem;
+      margin: 0 0 1.25rem;
+    }
+
+    p {
+      margin: 0 0 1.1rem;
+      line-height: 1.75;
+      color: #52606d;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 1.2rem;
+      color: #52606d;
+      line-height: 1.75;
+    }
+
+    .intro-lead {
+      font-size: 1.1rem;
+      color: #364152;
+    }
+
+    .info-grid {
+      display: grid;
+      gap: 1.75rem;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    }
+
+    .card {
+      background: #f8fafc;
+      border-radius: 14px;
+      padding: 1.5rem;
+      border: 1px solid #e5e7eb;
+    }
+
+    .card h3 {
+      margin-top: 0;
+      margin-bottom: 0.75rem;
+      font-size: 1.15rem;
+      color: #1f2933;
+    }
+
+    @media (max-width: 640px) {
+      section {
+        padding: 2rem 1.75rem;
+      }
+
+      nav a {
+        margin-left: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <a href="#about">About</a>
+        <a href="#focus">Focus</a>
+        <a href="#timeline">Highlights</a>
+      </nav>
+      <div class="site-links">
+        <a href="https://www.linkedin.com/in/rishon-lumba/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <section id="about">
+        <h1>Hello, I'm Rishon.</h1>
+        <p class="intro-lead">I'm a cybersecurity student based in Sydney, learning how to protect systems and tell better security stories.</p>
+        <p>I spend my days balancing university classes, labs, and catching up with friends who are learning alongside me. When I'm not studying, I'm experimenting with small projects, writing down what actually helped, and sharing that back with the people I collaborate with.</p>
+        <p>This site is my corner of the internet for all of that. I'm keeping things straightforward, having fun building it, and learning as I go. If you need to reach me, <a href="mailto:me@rishonlumba.com">me@rishonlumba.com</a> works (and honestly anything @rishonlumba.com will find me).</p>
+      </section>
+
+      <section id="focus">
+        <h2>What I'm working on now</h2>
+        <div class="info-grid">
+          <div class="card">
+            <h3>Coursework & Labs</h3>
+            <p>Deepening my understanding of network defence, digital forensics, and secure coding through hands-on assessments.</p>
+          </div>
+          <div class="card">
+            <h3>Practice Projects</h3>
+            <p>Building small scripts to automate security checks, and recreating real-world attack scenarios in controlled environments.</p>
+          </div>
+          <div class="card">
+            <h3>Learning Together</h3>
+            <p>Setting up regular study sessions with friends, trading notes, and helping each other stay sharp as we figure things out.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="timeline">
+        <h2>Highlights so far</h2>
+        <div class="info-grid">
+          <div class="card">
+            <h3>Current Studies</h3>
+            <p>Pursuing a cybersecurity degree and focusing on the fundamentals that make strong security decisions possible.</p>
+          </div>
+          <div class="card">
+            <h3>Hands-on Practice</h3>
+            <p>Regularly tackling capture-the-flag challenges and lab environments to test myself beyond the lecture slides.</p>
+          </div>
+          <div class="card">
+            <h3>Working with Friends</h3>
+            <p>Pairing up on labs, testing each other's ideas, and keeping our progress moving forward together.</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Why this site exists</h2>
+        <p>I wanted a calm place to collect everything in one spot. This site gives me room to track progress, try ideas, and invite conversations without overcomplicating things.</p>
+        <p>It's a reminder that growth can stay personal and still be shared with anyone curious about the journey.</p>
+      </section>
+
+    </div>
+  </main>
+</body>
 </html>

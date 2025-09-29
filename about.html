@@ -1,6 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>More About Rishon</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      color: #1f2933;
+      background-color: #f6f7f9;
+    }
+
+    body {
+      margin: 0;
+      background: linear-gradient(180deg, #ffffff 0%, #f6f7f9 100%);
+    }
+
+    a {
+      color: inherit;
+    }
+
+    header {
+      background: rgba(255, 255, 255, 0.95);
+      border-bottom: 1px solid #e5e7eb;
+      padding: 1.5rem 1.25rem;
+    }
+
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 1.25rem 3.5rem;
+    }
+
+    header .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .header-links {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .header-links a,
+    header a {
+      text-decoration: none;
+      font-weight: 600;
+      color: #2563eb;
+      border: 1px solid rgba(37, 99, 235, 0.25);
+      padding: 0.45rem 0.9rem;
+      border-radius: 999px;
+      background: rgba(37, 99, 235, 0.1);
+      transition: background 0.2s ease, color 0.2s ease;
+    }
+
+    header a:hover,
+    header a:focus-visible,
+    .header-links a:hover,
+    .header-links a:focus-visible {
+      background: rgba(37, 99, 235, 0.18);
+      color: #1d4ed8;
+    }
+
+    main {
+      padding-top: 2.75rem;
+    }
+
+    section {
+      background: #ffffff;
+      border-radius: 18px;
+      padding: 2.25rem 2.1rem;
+      box-shadow: 0 20px 44px rgba(15, 23, 42, 0.06);
+      margin-bottom: 2rem;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 5vw, 2.7rem);
+      margin-top: 0;
+      margin-bottom: 1.25rem;
+    }
+
+    h2 {
+      font-size: 1.55rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      line-height: 1.75;
+      color: #52606d;
+      margin: 0 0 1.1rem;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 1.2rem;
+      color: #52606d;
+      line-height: 1.75;
+    }
+
+    .note {
+      background: #f8fafc;
+      border-left: 3px solid #2563eb;
+      padding: 1rem 1.25rem;
+      border-radius: 12px;
+      color: #364152;
+      margin: 1.5rem 0;
+    }
+
+    footer {
+      text-align: center;
+      color: #7b8794;
+      font-size: 0.95rem;
+      padding: 1rem 0 3rem;
+    }
+
+    @media (max-width: 600px) {
+      section {
+        padding: 2rem 1.6rem;
+      }
+    }
+  </style>
+</head>
 <body>
-    <h1>Test</h1>
-    <h2>Test1</h2>
-    <p>Test2</p>
-    <footer>Test3</footer>
+  <header>
+    <div class="container">
+      <div><strong>Rishon Lumba</strong></div>
+      <div class="header-links">
+        <a href="/">Back home</a>
+        <a href="https://www.linkedin.com/in/rishon-lumba/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <section>
+        <h1>More about me</h1>
+        <p>I’m based in Sydney and studying cybersecurity with a focus on building a strong foundation. I like understanding how systems behave, how people use them, and how to keep them secure without making life harder than it needs to be.</p>
+        <p>University keeps me busy with theory, but I try to connect every new concept to something practical—whether that’s a lab, a capture-the-flag challenge, or a real scenario we’ve talked through with classmates. I learn best when I can see why the detail matters.</p>
+      </section>
+
+      <section>
+        <h2>Day-to-day habits</h2>
+        <ul>
+          <li>Blocking out time for coursework, hands-on labs, and practice assessments.</li>
+          <li>Documenting what I learn so I can explain it clearly to someone else later.</li>
+          <li>Pairing up on tricky network or scripting problems so everyone walks away with a better answer.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Recent wins</h2>
+        <p>I'm proud of the small milestones that add up:</p>
+        <ul>
+          <li>Completing forensic analysis exercises that taught me how to stay organised under pressure.</li>
+          <li>Collaborating with classmates to break down security scenarios and compare approaches.</li>
+          <li>Setting up a study rhythm that leaves space for rest, curiosity, and trying new tools.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Why I built this site</h2>
+        <p>This website is my personal notebook. I'm keeping it simple, adding pieces over time, and enjoying the process. It’s a good reminder that learning can be steady and still feel fun.</p>
+        <div class="note">If anything here sparks an idea or you want to swap stories, send a note to <a href="mailto:me@rishonlumba.com">me@rishonlumba.com</a> (anything @rishonlumba.com will find me) or connect on LinkedIn.</div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">Thanks for reading. I hope you leave with a good sense of who I am and where I’m heading.</div>
+  </footer>
 </body>
+</html>
